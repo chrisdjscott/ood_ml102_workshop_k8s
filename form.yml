@@ -11,17 +11,20 @@ attributes:
   cpu:
     widget: number_field
     min: 1
-    max: 5
+    max: 4
+    default: 2
     label: "CPUs"
     required: true
   memory:
     widget: number_field
-    min: 1
-    max: 12
+    min: 3
+    max: 5
+    default: 3
     label: "Memory (GB)"
     required: true
   wall_time:
     widget: number_field
     label: "Hours"
     min: 1
-    value: 1
+    max: 100
+    value: 8
